@@ -37,12 +37,12 @@ const quizData = [
   {
     q: "What is our fav place to go when we were doing foundation?",
     options: ["Fab", "Diyatha park", "Weli park", "Campus"],
-    answerIndex: 2
+    answerIndex: 1
   },
   {
     q: "Which is our favorite date when you came back to Sri Lanka?",
     options: ["First day - Grand Bell", "Temple date", "Marino Beach Hotel dinner date", "Playdium"],
-    answerIndex: 3
+    answerIndex: 2
   },
   {
     q: "What is our anniversary date?",
@@ -52,12 +52,12 @@ const quizData = [
   {
     q: "Do you remember how many roses were in the first bouquet you bought me?",
     options: ["Two roses", "One rose", "Five roses", "Three roses"],
-    answerIndex: 4
+    answerIndex: 3
   },
   {
     q: "Do you remember the very first gift I bought for you?",
     options: ["Casio Watch", "A Ring", "Bracelet", "Necklace"],
-    answerIndex: 1
+    answerIndex: 0
   }
 ];
 
@@ -171,7 +171,7 @@ renderOneQuestion();
 const memoryEl = document.getElementById("memory");
 const memoryStatus = document.getElementById("memoryStatus");
 
-const symbols = ["💗","💗","💜","💜","✨","✨","🌙","🌙"];
+const symbols = ["❤️","❤️","💌","💌","🌹","🌹","🥰","🥰"];
 let deck = [];
 let first = null;
 let lock = false;
@@ -330,3 +330,4 @@ videoFile.addEventListener("change", () => {
   player.src = url;
   bumpProgress(10);
 });
+
