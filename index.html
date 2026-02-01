@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Sudu ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <header class="top">
+    <div class="brand">For <span id="partnerName">Sudu</span> ❤️</div>
+    <nav class="nav">
+      <a href="#start">Start</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#games">Games</a>
+      <a href="#comic">Our Story</a>
+      <a href="#letter">Letter</a>
+      <a href="#video">Video</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <!-- START -->
+    <section id="start" class="card hero">
+      <div class="heroGrid">
+        <div>
+          <h1>Hi <span class="accent" id="partnerName2">Sudu</span> 🌙</h1>
+          <p class="sub">
+            I made this little website just for you.  
+            First, there’s a quiz (don’t mess up 😌). Then you unlock games, our story, a letter, and a video.
+          </p>
+
+          <div class="row">
+            <label class="input">
+              <span>His name (optional)</span>
+              <input id="nameInput" placeholder="Sudu" value="Sudu" />
+            </label>
+
+            <button class="btn" id="startBtn">Start the Surprise ✨</button>
+          </div>
+
+          <div class="progress">
+            <div class="bar" id="bar"></div>
+          </div>
+
+          <p class="tiny">Tip: If sections look blurred, finish the quiz to unlock 💗</p>
+        </div>
+
+        <div class="heroPics">
+          <div class="picCard">
+            <img class="heroImg" src="img/sudu.jpg" alt="Sudu" />
+            <div class="picCap">Sudu ❤️</div>
+          </div>
+          <div class="picCard">
+            <img class="heroImg" src="img/me.jpg" alt="Me" />
+            <div class="picCap">Me 💗</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="card">
+      <h2>Quiz Time 💘</h2>
+      <p class="sub">Answer correctly to unlock everything. One question at a time 😌</p>
+
+      <div id="quizBox" class="quiz"></div>
+
+      <div class="row">
+        <button class="btn ghost" id="resetQuiz">Reset</button>
+        <button class="btn ghost" id="submitQuiz">Help?</button>
+      </div>
+
+      <p class="result" id="quizResult"></p>
+
+      <button class="btn hidden" id="revealBtn">Ready for the surprise? 💘</button>
+    </section>
+
+    <!-- GAMES -->
+    <section id="games" class="card locked">
+      <h2>Mini Games 🎮</h2>
+
+      <div class="grid2">
+        <!-- Memory game -->
+        <div class="panel">
+          <h3>Memory Hearts</h3>
+          <p class="sub">Match the pairs.</p>
+          <div id="memory" class="memory"></div>
+          <p class="tiny" id="memoryStatus"></p>
+          <button class="btn ghost" id="memoryReset">Shuffle</button>
+        </div>
+
+        <!-- Catch heart -->
+        <div class="panel">
+          <h3>Catch the Heart</h3>
+          <p class="sub">Click the heart 10 times. It runs away 😌</p>
+          <div class="arena" id="arena">
+            <button class="heartBtn" id="heartBtn" aria-label="Heart">💗</button>
+          </div>
+          <p class="tiny">Score: <span id="score">0</span>/10</p>
+          <button class="btn ghost" id="scoreReset">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMIC -->
+    <section id="comic" class="card locked">
+      <h2>Our Story (Comic) 📖</h2>
+      <p class="sub">Our little timeline… the moments that became “us” 💞</p>
+
+      <div class="comic">
+        <div class="panelComic">
+          <div class="bubble">We met at the foundation program… and something started quietly 🫶</div>
+          <div class="frame">
+            <img class="frameImg" src="img/story1.jpg" alt="Foundation program memory">
+          </div>
+          <div class="cap">Panel 1: Foundation program</div>
+        </div>
+
+        <div class="panelComic">
+          <div class="bubble">I asked you to buy me a coffee at FAB… you refused 😭☕</div>
+          <div class="frame">
+            <img class="frameImg" src="img/story2.jpg" alt="Coffee at FAB">
+          </div>
+          <div class="cap">Panel 2: Coffee refusal</div>
+        </div>
+
+        <div class="panelComic">
+          <div class="bubble">Then came late-night calls… texts… and my favorite notifications 💬🌙</div>
+          <div class="frame">
+            <img class="frameImg" src="img/story3.jpg" alt="Late night calls">
+          </div>
+          <div class="cap">Panel 3: Calls & texts</div>
+        </div>
+
+        <div class="panelComic">
+          <div class="bubble">I got caught at home… scolding… then I confessed… and you rejected 🥺</div>
+          <div class="frame">
+            <img class="frameImg" src="img/story4.jpg" alt="Confession moment">
+          </div>
+          <div class="cap">Panel 4: Confession & rejection</div>
+        </div>
+
+        <div class="panelComic">
+          <div class="bubble">I stopped chasing… I talked to everyone except you… and you got upset 😌</div>
+          <div class="frame">
+            <img class="frameImg" src="img/story5.jpg" alt="Missing each other">
+          </div>
+          <div class="cap">Panel 5: You missed me</div>
+        </div>
+
+        <div class="panelComic">
+          <div class="bubble">UK distance + rainy goodbye… but love returned stronger — always ❤️🌧️🇬🇧</div>
+          <div class="frame">
+            <img class="frameImg" src="img/story6.jpg" alt="Rainy day cafe goodbye">
+          </div>
+          <div class="cap">Panel 6: Long distance, stronger bond</div>
+        </div>
+      </div>
+
+      <p class="tiny">
+        Replace story1–story6 photos anytime. If any photo looks zoomed, tell me and I’ll adjust the perfect fit.
+      </p>
+    </section>
+
+    <!-- LETTER -->
+    <section id="letter" class="card locked">
+      <h2>A Letter 💌</h2>
+
+      <div class="paper" id="letterPaper">
+        <p><strong>My Sudu,</strong></p>
+
+        <p>
+          If I could, I would turn every memory into a place we can visit whenever we miss each other.
+          So I made this — a small world where you can feel me close, even when distance tries to be loud.
+        </p>
+
+        <p>
+          We didn’t start like a perfect love story. We started in a foundation program… with normal days,
+          small moments… and one very serious crime: you refusing to buy me coffee at FAB 😤☕
+        </p>
+
+        <p>
+          Then slowly, without warning, you became the person I wanted to talk to at night.
+          Calls that went too long. Texts that felt like home.
+          Even after the scolding… even after the rejection… my feelings didn’t disappear.
+        </p>
+
+        <p>
+          When I stopped giving you attention, you finally felt what I felt — that something was missing.
+          And when you asked me out, I said yes… and life became lighter.
+          We went everywhere. We laughed. We annoyed each other.
+          We proved that love is not only in big moments, but in small everyday effort.
+        </p>
+
+        <p>
+          Then the UK happened. The rain, that cafe near my house, and that “let’s stop this” moment…
+          It hurt, but it also showed the truth: we can’t replace each other.
+          From far away, we learned how much we really need each other.
+          And our bond didn’t weaken — it grew stronger.
+        </p>
+
+        <p>
+          Two years later, when you came back for those three weeks…
+          I felt it again — the same safety, the same excitement, the same “this is my person” feeling.
+          And even now, when we fight, we still can’t keep anger for long…
+          because love is bigger than ego for us.
+        </p>
+
+        <p>
+          Sudu, I am proud of you. I believe in you.
+          And I love you in a way that stays — through distance, time zones, exams, stress, and everything.
+          I don’t need a special day to love you… but I’ll still choose you on every special day anyway.
+        </p>
+
+        <p>
+          Happy Valentine’s, my love.
+          Keep this website like a little reminder that you are loved deeply — by me.
+        </p>
+
+        <p class="sign">— Yours, <span id="fromName">Helan</span> ❤️</p>
+      </div>
+
+      <div class="row">
+        <button class="btn ghost" id="copyLetter">Copy letter</button>
+        <button class="btn" id="downloadLetter">Download as .txt</button>
+      </div>
+
+      <p class="tiny" id="copyStatus"></p>
+    </section>
+
+    <!-- VIDEO -->
+    <section id="video" class="card locked">
+      <h2>Video 🎥</h2>
+      <p class="sub">You can add your video later. For now, you can test with any video file.</p>
+
+      <div class="uploadRow">
+        <label class="btn ghost">
+          Choose video
+          <input type="file" id="videoFile" accept="video/*" hidden />
+        </label>
+        <span class="tiny" id="videoName">No video selected</span>
+      </div>
+
+      <video id="player" controls playsinline class="player">
+        Sorry, your browser can’t play this video.
+      </video>
+
+      <p class="tiny">
+        Later, you can also upload to YouTube as Unlisted and embed it if you want.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p class="tiny">Made with ❤️ — free hosting via GitHub Pages.</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
