@@ -261,13 +261,13 @@ function moveHeart(){
   const pad = 10;
   const w = arena.clientWidth;
   const h = arena.clientHeight;
-  const x = rand(pad, Math.max(pad, w-60));
-  const y = rand(pad, Math.max(pad, h-60));
+const x = rand(pad, Math.max(pad, w-120));
+const y = rand(pad, Math.max(pad, h-120));
   heartBtn.style.left = x + "px";
   heartBtn.style.top = y + "px";
 }
 
-heartBtn.addEventListener("mouseenter", moveHeart);
+
 heartBtn.addEventListener("click", () => {
   score++;
   scoreEl.textContent = score;
@@ -330,4 +330,5 @@ videoFile.addEventListener("change", () => {
   player.src = url;
   bumpProgress(10);
 });
+
 
